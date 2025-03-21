@@ -3,35 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Alumni AGM 2024 - New Committee Announcement</title>
+    <title>University Alumni AGM 2024</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/committee.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Add smooth scroll behavior -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .gradient-text {
-            background: linear-gradient(45deg, #2563eb, #4f46e5);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
 </head>
-<body class="bg-white">
-    <!-- Fixed Navigation -->
+<body class="bg-gray-50">
+    <!-- Navigation -->
     <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
-                    <img src="img/uaa-logo.png" alt="Logo" class="h-10">
-                    <span class="text-xl font-bold gradient-text">Uniten Alumni Association (UAA)</span>
+                    <img src="img/uaa-logo.png" alt="UAA Logo" class="h-10">
+                    <span class="text-xl font-bold text-red-600">Uniten Alumni Association (UAA)</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
@@ -44,227 +31,149 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 pt-20">
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 pt-20">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-6xl font-bold mb-6 gradient-text">AGM 2024</h1>
+            <h1 class="text-6xl font-bold mb-6 text-red-600">AGM 2024</h1>
             <p class="text-2xl text-gray-600 mb-12 max-w-2xl mx-auto">Announcing Our New Committee Members</p>
             <div class="space-y-4">
                 <p class="text-xl text-gray-700">Successfully Concluded on 22nd February 2025</p>
-                <p class="text-xl text-gray-700">Admin Building, Universiti Tenaga National, Putrajaya Campus</p>
+                <p class="text-xl text-gray-700">Admin Building, Universiti Tenaga Nasional, Putrajaya Campus</p>
             </div>
         </div>
     </section>
 
     <!-- Committee Section -->
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Committee Members - Grouped EXCO</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f5;
-        }
-
-        #committee {
-            padding: 50px 20px;
-            text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        #committee h2 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #2c3e50;
-        }
-
-        #committee p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 40px;
-        }
-
-        .committee-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            padding: 20px;
-        }
-
-        .committee-member {
-            background: #fff;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .committee-member:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .committee-member.exco-group {
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 30px;
-        }
-
-        .committee-member h3 {
-            font-size: 1.3rem;
-            color: #2c3e50;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #e1e8ed;
-        }
-
-        .exco-group h3 {
-            grid-column: 1 / -1;
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .exco-member {
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .committee-member p {
-            font-size: 1rem;
-            color: #34495e;
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        .committee-member span {
-            display: inline-block;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-            padding: 4px 12px;
-            background-color: #f8f9fa;
-            border-radius: 15px;
-            margin-top: 8px;
-        }
-
-        .exco-member span {
-            background-color: #fff;
-        }
-
-        @media (max-width: 768px) {
-            #committee h2 {
-                font-size: 2rem;
-            }
-
-            .committee-grid {
-                grid-template-columns: 1fr;
-                padding: 10px;
-            }
-
-            .committee-member.exco-group {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <section id="committee">
-        <h2>Meet Our Committee</h2>
-        <p>The dedicated team leading our Alumni Association forward</p>
+    <section class="committee-section">
+        <div class="committee-title">
+            <h2>Meet Our Committee</h2>
+            <p>The dedicated team leading our Alumni Association forward</p>
+        </div>
         <div class="committee-grid">
-            <div class="committee-member">
+            <!-- President -->
+            <div class="committee-card">
                 <h3>President</h3>
                 <p>Aifaa Zaffan Bagauddin Bin Abdul Aziz</p>
                 <span>Kampus Muadzam</span>
             </div>
-            <div class="committee-member">
+            <!-- Timbalan President -->
+            <div class="committee-card">
                 <h3>Timbalan President</h3>
                 <p>Muhammad Shaufi bin Abdul Rahman</p>
                 <span>Kampus Muadzam</span>
             </div>
-            <div class="committee-member">
+            <!-- Setiausaha -->
+            <div class="committee-card">
                 <h3>Setiausaha</h3>
                 <p>Mangalagowri Ramanathan</p>
                 <span>Kampus Putrajaya</span>
             </div>
-            <div class="committee-member">
+            <!-- Penolong Setiausaha -->
+            <div class="committee-card">
                 <h3>Penolong Setiausaha</h3>
                 <p>Siti Zalikha bt Abd Aziz</p>
                 <span>Kampus Putrajaya</span>
             </div>
-            <div class="committee-member">
+            <!-- Bendahari -->
+            <div class="committee-card">
                 <h3>Bendahari</h3>
                 <p>Mohamed Ariff bin Jame'an</p>
                 <span>Kampus Muadzam</span>
             </div>
-            <div class="committee-member exco-group">
-                <h3>EXCO Members</h3>
-                <div class="exco-member">
-                    <p>Wan Haziq Wan Naim</p>
-                    <span>Kampus Muadzam</span>
-                </div>
-                <div class="exco-member">
-                    <p>Airil Adib bin Abd Khair</p>
-                    <span>Kampus Muadzam</span>
-                </div>
-                <div class="exco-member">
-                    <p>Akmal Farhan Bin Aziz</p>
-                    <span>Kampus Muadzam</span>
-                </div>
-                <div class="exco-member">
-                    <p>Muhammad Isham bin Iskandar</p>
-                    <span>Kampus Muadzam</span>
-                </div>
-                <div class="exco-member">
-                    <p>Ts. Dr. Nasrul Fadhrullah Bin Isa</p>
-                    <span>Kampus Putrajaya</span>
-                </div>
-                <div class="exco-member">
-                    <p>Lee Tai Yean</p>
-                    <span>Kampus Putrajaya</span>
-                </div>
+        </div>
+        <div class="committee-title mt-12">
+            <h2>EXCO Members</h2>
+        </div>
+        <div class="committee-grid">
+            <!-- EXCO Members -->
+            <div class="committee-card">
+                <p>Wan Haziq Wan Naim</p>
+                <span>Kampus Muadzam</span>
+            </div>
+            <div class="committee-card">
+                <p>Airil Adib bin Abd Khair</p>
+                <span>Kampus Muadzam</span>
+            </div>
+            <div class="committee-card">
+                <p>Akmal Farhan Bin Aziz</p>
+                <span>Kampus Muadzam</span>
+            </div>
+            <div class="committee-card">
+                <p>Muhammad Isham bin Iskandar</p>
+                <span>Kampus Muadzam</span>
+            </div>
+            <div class="committee-card">
+                <p>Ts. Dr. Nasrul Fadhrullah Bin Isa</p>
+                <span>Kampus Putrajaya</span>
+            </div>
+            <div class="committee-card">
+                <p>Lee Tai Yean</p>
+                <span>Kampus Putrajaya</span>
             </div>
         </div>
     </section>
-
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-20 gradient-text">AGM 2024 Highlights</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-4 rounded-xl shadow-lg">
-                    <h3 class="text-lg font-semibold mb-2">Opening Ceremony</h3>
-                    <img src="https://placehold.co/600x400" alt="Opening Ceremony" class="w-full rounded-lg mb-2">
-                    <p class="text-gray-600">Welcome address by outgoing president</p>
+    <section class="gallery-section">
+        <div class="gallery-title">
+            <h2>AGM 2024 Highlights</h2>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/ARS00696-2.jpg" alt="AGM Event 1">
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg">
-                    <h3 class="text-lg font-semibold mb-2">Committee Election</h3>
-                    <img src="https://placehold.co/600x400" alt="Committee Election" class="w-full rounded-lg mb-2">
-                    <p class="text-gray-600">Voting session for new committee members</p>
+                <div class="slide">
+                    <img src="img/ARS00704-2.jpg" alt="AGM Event 2">
                 </div>
-                <div class="bg-white p-4 rounded-xl shadow-lg">
-                    <h3 class="text-lg font-semibold mb-2">Closing Ceremony</h3>
-                    <img src="https://placehold.co/600x400" alt="Closing Ceremony" class="w-full rounded-lg mb-2">
-                    <p class="text-gray-600">Group photo of new committee members</p>
+                <div class="slide">
+                    <img src="img/ARS00711-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00722-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00726-2.jpg" alt="AGM Event 4">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00785-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00790-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00831-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00838-2.jpg" alt="AGM Event 3">
+                </div>
+                <div class="slide">
+                    <img src="img/ARS00895-2.jpg" alt="AGM Event 5">
                 </div>
             </div>
+            <div class="slider-navigation">
+                <button onclick="moveSlide(-1)">❮</button>
+                <button onclick="moveSlide(1)">❯</button>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+            <span class="dot" onclick="goToSlide(5)"></span>
+            <span class="dot" onclick="goToSlide(6)"></span>
+            <span class="dot" onclick="goToSlide(7)"></span>
+            <span class="dot" onclick="goToSlide(8)"></span>
+            <span class="dot" onclick="goToSlide(9)"></span>
+        </div>
+        <div class="view-photos-container">
+            <a href="https://photos.app.goo.gl/HSDHv9VM8gXypjPn9" target="_blank" class="view-photos-btn">
+                View All Photos
+            </a>
         </div>
     </section>
-
+    <script src="js/slider.js"></script>
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-blue-600 text-white">
         <div class="container mx-auto px-6 text-center">
@@ -295,5 +204,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

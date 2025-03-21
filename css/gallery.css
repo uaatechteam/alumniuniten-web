@@ -1,26 +1,118 @@
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
 }
 
-.gallery-item {
+.gallery-section {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.slider-container {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-item img {
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
     width: 100%;
-    height: 100%;
+    height: 500px;
     object-fit: cover;
-    transition: var(--transition);
 }
 
-.gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.slider-navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: all;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slider-navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #1d3557;
+}
+
+
+.view-photos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.view-photos-btn {
+    padding: 0.75rem 2rem;
+    background-color: #1d3557;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-photos-btn:hover {
+    background-color: #123456;
+    transform: scale(1.05);
 }
